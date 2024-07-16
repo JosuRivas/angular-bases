@@ -1,0 +1,16 @@
+<h1>DBZ Main Page</h1>
+ <hr>
+
+ <div class="row">
+    <div class="col">
+
+      <!-- (onDeleteId) es el nombre del emitter en el componente hijo list.component.ts-->
+      <dbz-list [characterList]="characters" (onDeleteId)="onDeleteCharacter($event)"></dbz-list>
+
+    </div>
+    <div class="col">
+      <!-- (onNewCharacter) es el nombre del emitter en el componente hijo form.component.ts-->
+      <dbz-form (onNewCharacter)="onNewCharacter($event)"></dbz-form>
+
+    </div>
+ </div>
